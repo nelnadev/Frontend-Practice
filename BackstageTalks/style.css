@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header img {
+  width: 25vw;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* MAIN */
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+main img {
+  width: 25rem;
+}
+
+.wrapper {
+  height: 96vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.container-img {
+  scroll-snap-align: center;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.container-img a {
+  color: white;
+  text-decoration: none;
+}
+
+.container-img a:hover {
+  text-decoration: underline;
+}
+
+.container-img p {
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.issue8 {
+  background-color: #f6e0a4;
+}
+
+.issue7 {
+  background-color: #ff608b;
+}
+
+.issue6 {
+  background-color: white;
+}
+
+.issue6 a {
+  color: #ff608b;
+}
+
+.issue5 {
+  background-color: #0ca197;
+}
+
+.issue4 {
+  background-color: #ff6519;
+}
+
+.issue3 {
+  background-color: #ffbe00;
+}
+
+.issue2 {
+  background-color: #1e3fbb;
+}
+
+.issue1 {
+  background-color: #e30611;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 0 1rem 0 1rem;
+}
+
+footer a {
+  color: black;
+}
+
+footer p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+span {
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.block-text {
+  width: 320px;
+  position: absolute;
+  bottom: 1rem;
+  margin-top: 0;
+}
+
+.block-link {
+  position: absolute;
+  bottom: 1rem;
+  right: 15px;
+  width: 200px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7rem;
+  text-decoration-style: none;
+  font-size: 1.1rem;
+}
+
+.block-link a {
+  text-decoration: none;
+}
+
+.block-link a:hover {
+  text-decoration: underline;
+}
+
+.block-link a:focus {
+  font-weight: 700;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  header,
+  footer .block-link {
+    display: none;
+  }
+
+  footer .block-text {
+    display: none;
+  }
+
+  main img {
+    width: 22rem;
+  }
+
+  .container-img {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header,
+  footer .block-link {
+    display: none;
+  }
+}
